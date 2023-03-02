@@ -44,7 +44,7 @@
 
                     <div class="user-input">
                         <label for="">Age</label>
-                        <input type="number" placeholder="Age" class="form-element">
+                        <input type="number" placeholder="Age" class="form-element" min="13" max="120">
                     </div>
                 
                 </fieldset>
@@ -52,7 +52,7 @@
                 <fieldset>
                     <div class="user-input">
                         <label for="dpwn" >How satisfied are you with out product?</label>
-                        <select name="" onclick="myFunction()" id="dpwn" class="form-element">
+                        <select name="" onclick="drodpownAnimation()" id="dpwn" class="form-element">
                             <option value="1" disabled selected>Choose an option</option>
                             <option value="2">Very unsatisfied</option>
                             <option value="3">Somewhat unsatisfied</option>
@@ -64,7 +64,7 @@
                 <fieldset>
                     <div class="user-input">
                         
-                        <label>How often do you use our service?</label>
+                        <label id="frequency-label">How often do you use our service?</label>
                         <div id="wrapper-always-never">
                             
                             <div class="frequency">
@@ -84,9 +84,31 @@
                         
                     </div>
                 </fieldset>
+                <fieldset>
+                    <div class="user-input">
+                        <label for="" id="title-checkbox">How can we improve our product/service?</label>
+                        <br>
+                        
+                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> Faster response times</label>
+                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> Better customer support</label>
+                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> More product/service options</label>
+                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id="other-checkbox" onclick="toggleTextArea()"> Other (please specify)</label>
+                        <textarea name="" id="feedback-area" cols="20" rows="5" style="display: none;"></textarea>
+                        
+                    </div>
+                </fieldset>
+                <div class="center">
+                    <button type="submit" class="form-element" id="submit"><h6>SUBMIT</h6></button>
+                </div>
+                 
+               
+                 
+                
             
             </form>
         </main>
     </body>
-    <script src="index.js" defer></script>
+    <script src="index.js" defer>
+        
+    </script>
 </html>

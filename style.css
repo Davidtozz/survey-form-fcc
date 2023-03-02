@@ -21,6 +21,7 @@ body{
 
 
 main{
+    padding: 5rem 10rem;
     position: absolute;
     right: 0;
     background-color: var(--main-background);
@@ -28,7 +29,7 @@ main{
     width: 50vw;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     
 }
@@ -63,7 +64,6 @@ main{
 label{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-
 }
 
 .form-element{
@@ -124,6 +124,12 @@ input[type="radio"]{
     width: 3rem;
 }
 
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+
 .frequency{
     display: flex;
     flex-direction: column;
@@ -136,10 +142,57 @@ input[type="radio"]{
 }
   
 #email-age > div:first-of-type{
-    width: calc(75%);
+    width: calc(80%);
 }
 
 #email-age > div:last-of-type{
-    width: calc(25%);
+    width: calc(20%);
 } 
 
+#frequency-label{
+    text-align: center;
+    margin: 0 0 .4rem 0;
+   
+}
+
+input[type="checkbox"]{
+    border: 1px solid black;
+    border-radius: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.label-checkbox{
+    font-size: 20px;
+}
+#title-checkbox{
+    margin-bottom: .5rem;
+}
+
+textarea{
+    margin: .5rem 1rem;
+}
+
+#submit{
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 1.5rem;
+    width: 70%;
+    cursor: pointer;
+}
+#submit > *{
+    text-indent: 0;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
