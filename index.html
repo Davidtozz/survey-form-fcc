@@ -9,7 +9,7 @@
     </head>
 
     <body>
-
+       <img src="./survey.jpg" id="bg">
         <div id="title-wrapper">
             <h1>Survey Form</h1>
             <p>Share your thoughts with us!</p>
@@ -53,7 +53,7 @@
                     <div class="user-input">
                         <label for="dpwn" >How satisfied are you with out product?</label>
                         <select name="" onclick="drodpownAnimation()" id="dpwn" class="form-element">
-                            <option value="1" disabled selected>Choose an option</option>
+                            <option value="1" selected="selected">🡇Choose an option🡇</option>
                             <option value="2">Very unsatisfied</option>
                             <option value="3">Somewhat unsatisfied</option>
                             <option value="4">Neutral</option>
@@ -93,7 +93,7 @@
                         <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> Better customer support</label>
                         <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> More product/service options</label>
                         <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id="other-checkbox" onclick="toggleTextArea()"> Other (please specify)</label>
-                        <textarea name="" id="feedback-area" cols="20" rows="5" style="display: none;"></textarea>
+                        <textarea name="feedback" id="feedback-area" cols="20" rows="5" placeholder="Submit your feedback..." maxlength="243"></textarea>
                         
                     </div>
                 </fieldset>
