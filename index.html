@@ -22,13 +22,13 @@
                 <fieldset id="name-surname">
                     
                     <div class="user-input" id="name">
-                        <label for="user-name">Name</label>
-                        <input type="text" id="user-info" placeholder="Name"/>
+                        <label for="user-name" >Name</label>
+                        <input type="text" id="user-info" placeholder="Name" class="form-element"/>
                     </div>
 
                     <div class="user-input" id="surname">
-                        <label for="user-surname">Surname</label>
-                        <input type="text" name="user-info" id="user-surname" placeholder="Surname">
+                        <label for="user-surname" >Surname</label>
+                        <input type="text" name="user-info" id="user-surname" placeholder="Surname" class="form-element">
                     </div>
                    
                 </fieldset>
@@ -39,27 +39,37 @@
                 
                     <div class="user-input">
                         <label for="">Email</label>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" class="form-element">
                     </div>
 
                     <div class="user-input">
                         <label for="">Age</label>
-                        <input type="number" placeholder="Age">
+                        <input type="number" placeholder="Age" class="form-element">
                     </div>
                 
                 </fieldset>
 
                 <fieldset>
                     <div class="user-input">
-                        <label for="dropdown">What do you </label>
-                        <select name="" onclick="myFunction()" id="dropdown">
-                            <option value="1" selected disabled>Choose an option</option>
-                            <option value="2">Very Unsatisfied</option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                            <option value="6"></option>
+                        <label for="dpwn" >How satisfied are you with out product?</label>
+                        <select name="" onclick="myFunction()" id="dpwn" class="form-element">
+                            <option value="1" disabled selected>Choose an option</option>
+                            <option value="2">Very unsatisfied</option>
+                            <option value="3">Somewhat unsatisfied</option>
+                            <option value="4">Neutral</option>
+                            <option value="5">Somewhat satisfied</option>
+                            <option value="6">Very satisfied</option>
                         </select>
+                </fieldset>
+                <fieldset>
+                    <div class="user-input radio-inputs">
+                        <label>How often do you use or service?</label>
+                        <input type="radio" name="frequency" id="" class="form-element">
+                        <input type="radio" name="frequency" id="" class="form-element">
+                        <input type="radio" name="frequency" id="" class="form-element">
+                        <input type="radio" name="frequency" id="" class="form-element">
+                        <input type="radio" name="frequency" id="" class="form-element">
+                    </div>
                 </fieldset>
             
             </form>
