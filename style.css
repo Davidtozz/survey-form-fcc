@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --transparent:#00000000;
+    --white: #F5F5F5;
+    --main-background:#F4F6F7;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top,black, var(--transparent) 28%), url("./survey.jpg");
+    background-size: cover;
+
+}
+
+
+main{
+    position: absolute;
+    right: 0;
+    background-color: var(--main-background);
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+#title-wrapper{
+   
+    position: absolute;
+    left: 2rem;
+    bottom: 4rem;
+    margin: .2rem .3rem;
+    width: fit-content;
+    padding: 0.1rem 1rem;
+    /* background-color: rgb(19, 19, 19); */
+}
+
+#title-wrapper > h1{
+    max-width: fit-content;    
+    text-align: right;
+    font-family: 'Sofia Sans', sans-serif;
+    color: var(--white);
+    font-size: 64px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+#title-wrapper > p{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+
+}
+
+input, select{
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 43px;
+    text-indent: 1rem;
+    font-size: 24px;   
+    background-color: var(--white);
+}
+
+
+select {
+    text-align: center;
+    text-align-last: center;
+    /* webkit*/
+    transition: all .4;
+}
+select:checked + label{
+    border-radius: 20px 20px 0 0;
+}
+option {
+text-align: left;
+/* reset to left*/
+}
+ 
+
+fieldset{
+    display: flex;
+    border: 0;
+    gap: .5rem;
+    padding: .5rem;
+}
+
+.user-input{
+    display: flex;
+    flex-direction: column;   
+    width: 100%; 
+}
+
+.user-input > label{
+    margin-left:1rem;
+}
+
+#email-age > div:first-of-type{
+    width: calc(75%);
+}
+
+#email-age > div:last-of-type{
+    width: calc(25%);
+} 

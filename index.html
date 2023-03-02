@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+
+        <div id="title-wrapper">
+            <h1>Survey Form</h1>
+            <p>Share your thoughts with us!</p>
+        </div>
+
+        <main>
+            
+            <form action="">
+
+                <fieldset id="name-surname">
+                    
+                    <div class="user-input" id="name">
+                        <label for="user-name">Name</label>
+                        <input type="text" id="user-info" placeholder="Name"/>
+                    </div>
+
+                    <div class="user-input" id="surname">
+                        <label for="user-surname">Surname</label>
+                        <input type="text" name="user-info" id="user-surname" placeholder="Surname">
+                    </div>
+                   
+                </fieldset>
+
+                <br>
+                
+                <fieldset id="email-age">
+                
+                    <div class="user-input">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="user-input">
+                        <label for="">Age</label>
+                        <input type="number" placeholder="Age">
+                    </div>
+                
+                </fieldset>
+
+                <fieldset>
+                    <div class="user-input">
+                        <label for="dropdown">What do you </label>
+                        <select name="" onclick="myFunction()" id="dropdown">
+                            <option value="1" selected disabled>Choose an option</option>
+                            <option value="2">Very Unsatisfied</option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                        </select>
+                </fieldset>
+            
+            </form>
+        </main>
+    </body>
+    <script src="index.js" defer></script>
+</html>

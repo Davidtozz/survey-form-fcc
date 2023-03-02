@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+   
+    <main>
+
+        <div id="title-wrapper">
+            <h1 id="title">Survey Form</h1>
+        </div>
+
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.<p>
+
+        <form id="survery-form">
+
+            <fieldset id="user-info">
+                <label for="name" id="name-label">
+                    <input id="name" type="text" required placeholder="Your name">
+                </label>
+
+                <label for="email" id="email-label">
+                    <input id="email" type="email" required placeholder="Your email">
+                </label>
+           
+                <label for="age" id="age-label">
+                    <input id="age" type="number" required placeholder="Your age" min="13" max="120">
+                </label>
+                <!-- <input type="submit" value="Submit"> -->
+
+            </fieldset>
+            <fieldset>
+                <select id="dropdown">
+                        <option value="1" disabled selected>Select an option</option>
+                        <option value="2">Bergamo</option>
+                        <option value="3">Milano</option>
+                    
+                    
+                </select>
+            </fieldset>
+            <fieldset>
+                <input type="radio" name="" id="">
+                <input type="radio" name="" id="">
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">
+                <input type="checkbox" name="" id="" value="">
+            </fieldset>
+            <fieldset>
+                <textarea name="" id="" cols="30" rows="10">
+
+                </textarea>
+                
+            </fieldset>
+            <input type="submit" value="">
+        </form>
+    </main>
+
+</body>
+</html>
