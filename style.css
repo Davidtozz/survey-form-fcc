@@ -212,7 +212,7 @@ textarea{
 
 
 
-@media screen and (orientation: portrait) and (max-width:600px) {
+@media screen and (orientation: portrait) and (max-width:700px) {
     
     body{
         display: flexbox;
@@ -221,11 +221,21 @@ textarea{
         
     }
 
+    main{
+        position: unset;
+        width: 100%;
+        padding: 3rem 0rem;    
+    }
+
+    form{
+        width: 65%;
+    }
+
     #bg{
         position: unset;
         height: 30vh;
         width: 100%;
-        background-image: linear-gradient(to bottom,black, var(--transparent) 28%);
+        background-image: linear-gradient(to top, black, var(--transparent) 28%);
         background-size: cover;
     }
 
@@ -249,6 +259,29 @@ textarea{
         font-size: 20px;
     }
 
+    .form-element{
+        height: 35px;
+        font-size: 18px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    .label-checkbox{
+        position: relative;
+        font-size: 16px;
+        line-height: 2.5;
+    }
+
+    input[type="radio"]{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+   
+    input[type="checkbox"]{
+        width: 1.5rem;
+    }
 
     
 }

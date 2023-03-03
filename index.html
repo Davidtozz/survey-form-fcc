@@ -89,10 +89,25 @@
                         <label for="" id="title-checkbox">How can we improve our product/service?</label>
                         <br>
                         
-                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> Faster response times</label>
-                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> Better customer support</label>
-                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id=""> More product/service options</label>
-                        <label for="" class="label-checkbox"><input type="checkbox" name="feedback" id="other-checkbox" onclick="toggleTextArea()"> Other (please specify)</label>
+                        <div>  
+                            <input type="checkbox" name="feedback" id="">
+                            <label for="" class="label-checkbox"> Faster response times</label> 
+                        </div>
+
+                        <div>  
+                            <input type="checkbox" name="feedback" id="">
+                            <label for="" class="label-checkbox"> Better customer support</label>
+                        </div>
+
+                        <div>  
+                            <input type="checkbox" name="feedback" id="">
+                            <label for="" class="label-checkbox"> More product/service options</label> 
+                        </div>
+                        <div>  
+                            <input type="checkbox" name="feedback" id="other-checkbox" onclick="toggleTextArea()">
+                            <label for="" class="label-checkbox"> Other (please specify)</label>
+                        </div>
+                        
                         <textarea name="feedback" id="feedback-area" cols="20" rows="5" placeholder="Submit your feedback..." maxlength="243"></textarea>
                         
                     </div>
